@@ -1,0 +1,16 @@
+.my-form {
+    padding: 20px; /* Add padding to the form */
+    margin: 20px; /* Add margin to the form */
+    border: 1px solid #ccc; /* Add a border around the form */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 30px; /* Add some top margin to separate buttons from form content */
+    padding-top: 20px;
+  }
+  
+  .button-container button {
+    margin-left: 10px; /* Add some space between buttons */
+  }

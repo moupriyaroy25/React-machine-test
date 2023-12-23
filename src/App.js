@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
+import Mynavbar from './components/mynavbar';
+import dashboard from './components/dashboard';
+import Createads from './components/createads';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Textmediaform from './components/Textmediaform';
+import Videomediaform from './components/Videomediaform';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Mynavbar/>
+      <Routes>
+        <Route path='/' Component={dashboard}/>
+        <Route path='/createads' Component={Createads}/>
+        <Route path='/textmediaform' Component={Textmediaform}/>
+        <Route path='/videomediaform' Component={Videomediaform}/>
+        
+      </Routes>
+      
+    </Router>
   );
 }
 
